@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eeeeee;
+  color: #333;
+}
+
+.page {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.hero {
+  height: 400px;
+  background-image: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.15),
+        rgba(0, 0 ,0, 0.15)
+      ),
+      url("lagos.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.hero-content {
+  color: white;
+}
+
+.hero h1 {
+  display: inline-block;
+
+  background-color: #2d6478;
+
+  padding: 15px 35px;
+
+  font-size: 38px;
+  
+  margin-bottom: 10px;
+}
+
+.hero p {
+  background-color: #244f60;
+
+  padding: 12px 25px;
+
+  font-size: 18px;
+
+  max-width: 600px;
+
+  margin: auto;
+}
+
+.activities {
+  padding: 35px 30px;
+
+  text-align: center;
+}
+
+.activities h2 {
+  font-size: 25px;
+
+  margin-bottom: 30px;
+}
+
+.activity-container {
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.activity {
+  flex: 1;
+}
+
+.activity img {
+  width: 110px;
+  height: 110px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin-bottom: 15px;
+}
+
+.activity h3 {
+  font-size: 18px;
+
+  margin-bottom: 12px;
+}
+
+.activity p {
+  font-size: 15px;
+
+  line-height: 1.5;
+
+  color: #555;
+}
+
+.guide {
+  width: 75%;
+
+  margin: 20px auto 40px;
+
+  background-color: #9bdfe0;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 20px;
+
+  gap: 25px;
+
+  border-radius: 5px;
+}
+
+.guide img {
+  width: 180px;
+  height: 210px;
+
+  object-fit: cover;
+}
+
+.guide-text p {
+  line-height: 1.6;
+
+  margin-bottom: 15px;
+}
+
+.guide-name {
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 700px) {
+  
+  .page {
+    width: 95%;
+  }
+
+
+  .hero {
+    height: 350px;
+  }
+
+
+  .hero p {
+    font-size: 15px;
+  }
+
+
+  .activity-container {
+    flex-direction: column;
+  }
+
+
+  .activity {
+    margin-bottom: 25px;
+  }
+
+
+  .guide {
+    width: 90%;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+
+  .guide img {
+    width: 160px;
+    height: 180px;
+  }
+
+}
